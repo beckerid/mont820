@@ -1,0 +1,59 @@
+---
+title: "Assignment 1"
+format: html
+editor: visual
+---
+
+# 1. Quarto
+
+Quarto is a comprehensive and versatile document creation package designed to facilitate dynamic and reproducible research, reports, presentations, and more. Built with the needs of data scientists, researchers, and authors in mind, Quarto supports a wide array of programming languages including R, Python, Julia, and Observable JavaScript, allowing for seamless integration of code, results, and narratives in a single document. This open-source tool extends the capabilities of Markdown, enabling users to create high-quality outputs in various formats such as HTML, PDF, slides, and even interactive websites or applications, all from a single source. With its emphasis on reproducibility, collaboration, and flexibility, Quarto aims to enhance the way knowledge is shared and communicated in the digital age. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Exercises
+
+1.  Incert a code chunk then write code to do the following:
+
+    a.  Store the sum of 5 and 6 in a variable named `bob`, then print the continence of `bob`
+    b.  Store the product of 25 and 5 in a variable named `bill`, then print the continence of `bill`
+
+2.  Use the logical operators to instruct R to complete the following true false test:
+
+    | Operator | Description              | Example         | Result  |
+    |----------|--------------------------|-----------------|---------|
+    | `==`     | Equal to                 | `2 == 2`        | `TRUE`  |
+    | `!=`     | Not equal to             | `2 != 2`        | `FALSE` |
+    | `<`      | Less than                | `2 < 3`         | `TRUE`  |
+    | `<=`     | Less than or equal to    | `3 <= 3`        | `TRUE`  |
+    | `>`      | Greater than             | `3 > 2`         | `TRUE`  |
+    | `>=`     | Greater than or equal to | `2 >= 3`        | `FALSE` |
+    | `&`      | Element-wise logical AND | `TRUE & FALSE`  | `FALSE` |
+    | `\|`     | Element-wise logical OR  | `TRUE \| FALSE` | `TRUE`  |
+
+    a.  **Direct Equality Test**: Verify if 100 divided by 2 equals 50.
+    b.  **Inequality Check**: Determine if 7 times 3 is not equal to 20.
+    c.  **Simple Less Than Comparison**: Check if 15 minus 10 is less than 8.
+    d.  **Less Than or Equal Verification**: Assess if half of 100 is less than or equal to 50.
+    e.  **Greater Than or Equal to Confirmation**: Confirm if 200 minus 150 is greater than or equal to 50.
+    f.  **Inequality Test**: Check if the the string "data" is not equal to the length of "science".
+    g.  **Logical AND Operation**: Determine if 20 is greater than 10 and 30 is less than 40.
+    h.  **Logical OR Operation**: Check if 5 is less than 3 or 8 is greater than 6.
+    i.  **Logical AND Test**: Test if 10 is greater than 5 and 8 is less than 15.
+    j.  **Logical OR Test**: Determine if either 20 is less than 15 or 25 is greater than 20.
+
+3.  
