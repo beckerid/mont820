@@ -1,0 +1,151 @@
+"child_id","child_age","years_Montessori","parent1_ed","parent2_ed","pre_day_night","post_day_night","pre_card_sort","post_card_sort","pre_design_copy","post_design_copy"
+1,5,2,"AA or equivalent","Bachelors or equivalent",1,9,3,2,13,13
+2,4.73,1,"Masters or equivalent","Bachelors or equivalent",2,8,3,2,14,14
+3,5.74,1,"AA or equivalent","High School or GED",4,4,1,1,8,11
+4,4.89,2,"Masters or equivalent","Masters or equivalent",7,9,1,2,11,16
+5,3.31,0,"Masters or equivalent","Bachelors or equivalent",7,9,1,2,11,8
+6,4.47,1,"PhD or equivalent","Bachelors or equivalent",8,8,1,1,9,8
+7,6.42,3,"Masters or equivalent","AA or equivalent",1,1,3,3,9,16
+8,4.16,1,"Bachelors or equivalent","Bachelors or equivalent",8,8,1,1,9,3
+9,6.12,3,"Bachelors or equivalent","Bachelors or equivalent",9,9,2,2,9,12
+10,4.46,1,"Masters or equivalent","Masters or equivalent",9,8,1,1,10,10
+11,6.1,3,"High School or GED","AA or equivalent",1,8,3,2,14,13
+12,5.33,2,"Bachelors or equivalent","Bachelors or equivalent",10,10,2,2,16,11
+13,5.85,1,"Masters or equivalent","Bachelors or equivalent",10,9,2,3,10,10
+14,4.53,2,"Bachelors or equivalent","Bachelors or equivalent",3,8,2,2,12,14
+15,5.1,0,"AA or equivalent","AA or equivalent",2,6,3,3,13,12
+16,6.18,3,"Masters or equivalent","Bachelors or equivalent",9,9,2,2,14,16
+17,5.48,2,"AA or equivalent","PhD or equivalent",2,3,1,3,14,13
+18,4.27,1,"Bachelors or equivalent","PhD or equivalent",3,9,2,1,12,8
+19,6.4,3,"Masters or equivalent","Bachelors or equivalent",10,10,2,1,14,9
+20,5.96,1,"AA or equivalent","AA or equivalent",7,7,2,1,14,14
+21,6.24,3,"AA or equivalent","Bachelors or equivalent",2,7,1,3,15,14
+22,5.15,2,"PhD or equivalent","Bachelors or equivalent",7,8,2,1,15,12
+23,4.91,0,"AA or equivalent","Bachelors or equivalent",3,9,2,2,9,11
+24,5.17,2,"Bachelors or equivalent","Masters or equivalent",8,9,2,2,12,12
+25,3.93,1,"PhD or equivalent","Masters or equivalent",10,9,3,2,11,1
+26,4.26,1,"Masters or equivalent","AA or equivalent",7,9,2,1,6,10
+27,3.36,0,"Bachelors or equivalent","Masters or equivalent",4,8,1,2,4,3
+28,4.4,1,"Bachelors or equivalent","Bachelors or equivalent",1,1,1,2,10,3
+29,4.43,1,"AA or equivalent","Masters or equivalent",10,8,2,2,12,12
+30,4.56,1,"PhD or equivalent","Bachelors or equivalent",9,8,2,3,14,14
+31,4.39,0,"Masters or equivalent","Bachelors or equivalent",1,2,1,1,14,14
+32,6.15,3,"Bachelors or equivalent","AA or equivalent",3,9,3,2,16,3
+33,3.2,0,"Masters or equivalent","Masters or equivalent",9,2,1,1,7,11
+34,5.91,2,"PhD or equivalent","Masters or equivalent",10,10,3,2,12,8
+35,6.36,2,"Masters or equivalent","AA or equivalent",3,3,1,3,10,15
+36,3.94,0,"Bachelors or equivalent","Bachelors or equivalent",10,7,2,2,10,14
+37,3.16,0,"High School or GED","Bachelors or equivalent",8,10,1,2,2,10
+38,5.99,2,"AA or equivalent","Masters or equivalent",2,1,1,3,11,13
+39,5.46,2,"Masters or equivalent","AA or equivalent",2,9,2,1,11,10
+40,4.36,1,"AA or equivalent","Bachelors or equivalent",8,8,2,2,7,4
+41,5.71,3,"High School or GED","High School or GED",5,8,3,1,15,15
+42,5.23,2,"Bachelors or equivalent","AA or equivalent",10,10,2,2,9,12
+43,4.46,0,"Bachelors or equivalent","Bachelors or equivalent",9,8,2,2,12,15
+44,4.31,0,"Bachelors or equivalent","Bachelors or equivalent",8,4,2,1,7,11
+45,3.33,0,"Masters or equivalent","AA or equivalent",7,3,1,1,6,3
+46,4.31,0,"High School or GED","Bachelors or equivalent",8,10,2,1,14,4
+47,3.57,1,"Masters or equivalent","Bachelors or equivalent",8,1,1,1,8,3
+48,4.68,1,"Bachelors or equivalent","AA or equivalent",4,9,2,3,10,16
+49,4.26,1,"Bachelors or equivalent","AA or equivalent",4,10,1,1,4,12
+50,5.77,1,"High School or GED","did not finish High School",7,10,2,3,12,15
+51,4.49,1,"Bachelors or equivalent","Bachelors or equivalent",1,8,1,3,5,5
+52,4.85,2,"High School or GED","Bachelors or equivalent",3,9,2,3,14,4
+53,4.86,0,"PhD or equivalent","Bachelors or equivalent",6,10,1,2,13,15
+54,3.56,0,"Bachelors or equivalent","Bachelors or equivalent",9,2,1,1,6,12
+55,4.99,0,"Bachelors or equivalent","Bachelors or equivalent",8,9,1,1,15,13
+56,4.33,0,"Bachelors or equivalent","Bachelors or equivalent",7,1,1,1,7,8
+57,6.02,3,"Bachelors or equivalent","Bachelors or equivalent",1,8,2,2,13,12
+58,4.18,1,"Bachelors or equivalent","Bachelors or equivalent",4,8,2,1,16,9
+59,6.42,3,"Masters or equivalent","Bachelors or equivalent",9,7,3,1,15,16
+60,6.27,3,"Bachelors or equivalent","Bachelors or equivalent",10,9,1,1,14,15
+61,6.2,3,"Masters or equivalent","AA or equivalent",9,10,1,3,9,12
+62,3.15,0,"Bachelors or equivalent","Bachelors or equivalent",10,5,3,1,12,11
+63,4.66,2,"Bachelors or equivalent","Masters or equivalent",10,10,1,1,13,16
+64,5.43,2,"AA or equivalent",NA,7,9,3,1,16,12
+65,3.48,0,"Bachelors or equivalent","Masters or equivalent",2,6,1,2,5,5
+66,5.6,3,"Bachelors or equivalent","AA or equivalent",7,9,2,3,9,14
+67,4.53,2,"High School or GED","Masters or equivalent",8,10,1,2,15,11
+68,3.04,0,"Bachelors or equivalent","AA or equivalent",9,2,1,1,9,9
+69,6.1,3,"Masters or equivalent","Bachelors or equivalent",9,8,2,3,13,10
+70,5.1,2,"AA or equivalent","AA or equivalent",10,10,1,2,14,9
+71,6.44,2,"Bachelors or equivalent","High School or GED",8,9,2,1,12,12
+72,5.02,2,"Masters or equivalent","Bachelors or equivalent",10,9,1,2,5,14
+73,6.35,3,"AA or equivalent","Bachelors or equivalent",9,9,1,1,15,12
+74,4.15,1,"High School or GED","AA or equivalent",4,8,1,1,6,5
+75,4.26,1,"Bachelors or equivalent","Bachelors or equivalent",10,9,1,1,9,7
+76,4.67,2,"AA or equivalent","PhD or equivalent",9,9,2,1,16,10
+77,4.8,2,"Bachelors or equivalent","High School or GED",10,8,3,1,12,13
+78,3.04,0,"AA or equivalent","Masters or equivalent",9,3,1,1,13,6
+79,6.5,1,"AA or equivalent","AA or equivalent",4,9,3,2,15,15
+80,4.34,0,"AA or equivalent","Bachelors or equivalent",8,10,1,1,12,10
+81,5.3,2,"Bachelors or equivalent","Bachelors or equivalent",8,9,2,3,9,14
+82,3.41,0,"Masters or equivalent","AA or equivalent",8,9,1,1,4,5
+83,4.82,0,"AA or equivalent","Masters or equivalent",9,10,3,3,8,10
+84,4.86,2,"Masters or equivalent","Bachelors or equivalent",2,8,1,1,12,13
+85,3.63,0,"Bachelors or equivalent","AA or equivalent",10,8,1,1,9,15
+86,3.81,1,"Masters or equivalent","Bachelors or equivalent",6,3,1,2,8,13
+87,4.37,1,"AA or equivalent","Masters or equivalent",4,10,1,2,15,10
+88,5.65,1,"AA or equivalent","PhD or equivalent",9,8,2,3,8,13
+89,5.3,2,"Masters or equivalent","Masters or equivalent",8,8,2,3,12,11
+90,3.88,1,"Bachelors or equivalent","AA or equivalent",1,5,1,1,9,6
+91,3.56,1,"AA or equivalent","Bachelors or equivalent",10,1,2,2,7,10
+92,4.39,0,"AA or equivalent","Bachelors or equivalent",4,8,1,2,2,5
+93,6.49,3,"Bachelors or equivalent","Bachelors or equivalent",9,8,1,2,9,10
+94,4.83,2,"Bachelors or equivalent","High School or GED",1,7,1,2,14,11
+95,3.46,0,"Masters or equivalent","Bachelors or equivalent",10,1,1,1,6,11
+96,4.29,1,"Masters or equivalent","Bachelors or equivalent",10,10,1,2,12,6
+97,5.34,0,"AA or equivalent","Masters or equivalent",9,10,2,3,11,9
+98,3.97,0,"AA or equivalent","Masters or equivalent",1,9,1,2,10,10
+99,4,1,"Masters or equivalent","AA or equivalent",10,2,1,1,10,15
+100,4.44,1,"Masters or equivalent","High School or GED",3,8,2,1,16,5
+101,6.21,2,"AA or equivalent","AA or equivalent",8,9,2,2,16,15
+102,4.26,0,"AA or equivalent","High School or GED",9,8,3,2,12,7
+103,6.01,3,"AA or equivalent","Bachelors or equivalent",2,9,1,2,7,9
+104,4.74,1,"AA or equivalent","High School or GED",3,10,1,1,16,11
+105,3.38,0,"AA or equivalent","AA or equivalent",9,3,1,1,2,3
+106,6.42,3,"Bachelors or equivalent","PhD or equivalent",9,9,3,1,11,15
+107,4.63,1,"AA or equivalent","Bachelors or equivalent",9,10,2,3,13,13
+108,5.84,2,"AA or equivalent","High School or GED",10,3,3,1,13,14
+109,3.78,0,"Bachelors or equivalent","AA or equivalent",8,9,3,1,15,11
+110,4.01,1,"AA or equivalent","AA or equivalent",2,1,2,1,14,8
+111,5.46,1,"AA or equivalent","Bachelors or equivalent",3,3,3,3,15,5
+112,3.31,0,"Bachelors or equivalent","Masters or equivalent",7,9,1,1,5,1
+113,4.19,1,"AA or equivalent","Masters or equivalent",4,9,2,2,8,6
+114,4.27,0,"PhD or equivalent","AA or equivalent",10,9,2,2,3,10
+115,6.3,2,"Bachelors or equivalent","Bachelors or equivalent",10,9,2,3,12,12
+116,4.2,0,"AA or equivalent","Bachelors or equivalent",9,10,2,1,10,1
+117,3.98,1,"Bachelors or equivalent","Masters or equivalent",3,10,1,1,5,4
+118,3.65,1,"PhD or equivalent","Bachelors or equivalent",2,1,1,3,8,10
+119,4.8,1,"Bachelors or equivalent","AA or equivalent",9,10,3,3,13,12
+120,3.02,0,"High School or GED","Bachelors or equivalent",4,8,1,2,6,2
+121,3.87,1,"Masters or equivalent","Bachelors or equivalent",7,8,1,2,3,4
+122,4.29,1,"Bachelors or equivalent","Masters or equivalent",1,9,1,1,11,4
+123,4,0,"AA or equivalent","Bachelors or equivalent",10,10,1,1,8,14
+124,4.95,2,"Bachelors or equivalent","AA or equivalent",5,9,1,2,14,15
+125,5.06,1,"AA or equivalent","AA or equivalent",4,9,3,2,12,14
+126,3.12,0,"AA or equivalent","Bachelors or equivalent",10,10,2,1,5,3
+127,6.38,3,"Bachelors or equivalent","Bachelors or equivalent",9,2,2,3,6,10
+128,5.29,2,"High School or GED","Bachelors or equivalent",4,9,1,3,11,4
+129,6.41,3,"Bachelors or equivalent","PhD or equivalent",10,7,3,2,8,16
+130,6.18,3,"AA or equivalent","Masters or equivalent",9,9,2,3,10,11
+131,5.78,3,"AA or equivalent","Bachelors or equivalent",8,10,1,2,14,10
+132,5.75,3,"Bachelors or equivalent","Masters or equivalent",8,10,2,2,15,5
+133,4.47,1,"Masters or equivalent","AA or equivalent",9,3,2,1,6,2
+134,4.03,1,"Bachelors or equivalent","PhD or equivalent",4,3,1,1,10,6
+135,3.76,1,"Masters or equivalent","High School or GED",10,9,1,1,11,10
+136,4.81,2,"Masters or equivalent","AA or equivalent",9,10,1,2,14,8
+137,4.83,2,"AA or equivalent","Masters or equivalent",8,8,2,1,12,12
+138,4.77,0,"AA or equivalent","AA or equivalent",9,6,2,3,16,11
+139,5.51,3,"Bachelors or equivalent","PhD or equivalent",10,9,2,3,15,9
+140,5.99,3,"Bachelors or equivalent","Masters or equivalent",10,10,1,2,12,11
+141,4.13,0,"High School or GED","Bachelors or equivalent",10,2,1,1,8,12
+142,3.9,0,"Masters or equivalent","High School or GED",1,1,1,1,8,5
+143,5.23,2,"Bachelors or equivalent","AA or equivalent",9,8,2,2,10,11
+144,3.42,0,"AA or equivalent","AA or equivalent",3,9,1,1,9,8
+145,4.01,1,"PhD or equivalent","Bachelors or equivalent",3,5,2,2,12,15
+146,4.21,1,"Bachelors or equivalent","Masters or equivalent",1,1,3,1,10,8
+147,4.76,2,"Masters or equivalent","AA or equivalent",10,9,3,3,11,16
+148,6.03,2,"Masters or equivalent","Masters or equivalent",9,10,1,1,12,15
+149,6.08,3,"AA or equivalent","AA or equivalent",10,4,2,1,11,15
+150,6.31,3,"AA or equivalent","Bachelors or equivalent",10,8,3,1,12,11
