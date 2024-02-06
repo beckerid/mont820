@@ -1,0 +1,416 @@
+---
+title: "Statistical Analysis in Education"
+format: 
+  revealjs: 
+    slide-level: 2
+    incremental: true   
+editor: visual
+---
+
+
+```{r}
+#| context: setup
+
+if(!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse,ggforce)
+```
+
+# Descriptive Statistics
+
+## Introduction to Descriptive Statistics
+
+- **Purpose**: Summarize large data sets sensibly
+- **Foundation**: Basis of quantitative data analysis
+- **Components**: Central tendency, variability
+- **Benefits**: Understanding, trend identification, comparison, decision making
+- **Tools**: Charts, graphs, plots for accessibility
+
+## Mean
+
+- **Definition**: The mean is the average of a data set, representing the central value of a discrete set of numbers.
+- **Sensitivity**: The mean is sensitive to outliers, as extreme values can significantly affect the average.
+- **Calculation**: The mean is calculated as the sum of all the values in the dataset divided by the number of values in the dataset. $$\text{Mean} = \frac{\rm{Sum\ of\ Values\ in\ Sample}}{\rm{Number\ of\ Observations}} = \frac{x_1+x_2\dots+x_N}{N}= \frac{1}{N}\sum_{n=1}^N{x_n}$$
+
+## Example Calculation:
+
+Consider the dataset: 2, 3, 5, 7, 11. The mean is calculated as:
+
+$$
+\text{Mean} = \frac{2 + 3 + 5 + 7 + 11}{5} = \frac{28}{5} = 5.6
+$$
+
+## Median
+
+- **Definition**: Middle value in an ordered dataset.
+- **Robustness**: Less affected by outliers.
+- **Use**: Preferred for skewed distributions.
+
+- The formula for the median in an ordered dataset is:
+  - For an odd number of observations: The middle value when the data are arranged in order.
+  - For an even number of observations: The average of the two middle values.
+
+## Example Calculation:
+
+Given the dataset: $12, 7, 2, 9, 4, 5, 1$
+
+- Ordered dataset: $1, 2, 4, 5, 7, 9, 12$
+- Median: The 4th value (as there are 7 values, making 4 the middle) = **5**
+
+
+## Mode
+
+- **Definition**: Most frequently occurring value
+- **Note**: Can be more than one or not exist
+
+
+## Mean Absolute Deviation
+
+- **Definition**: Distance of each data point from the mean.
+- **Measure**: Mean Absolute Deviation (MAD).
+- **Calculation**: The Mean Absolute Deviation is computed as the average of the absolute differences between each value in the dataset and the dataset's mean. $$\text{MAD} = \frac{|x_1 - \bar{x}| + |x_2 - \bar{x}| + ... + |x_N - \bar{x}|}{N} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \bar{x}|$$
+
+## Example MAD Calculation
+
+- Given a small dataset: $2, 4, 6, 8, 10$, with a mean ($\mu$) of 6:
+
+- Absolute deviations: $|2 - 6|, |4 - 6|, |6 - 6|, |8 - 6|, |10 - 6|$ are $4, 2, 0, 2, 4$ respectively.
+
+- $$ MAD = \frac{4 + 2 + 0 + 2 + 4}{5} = \frac{12}{5} = 2.4 $$
+
+## Standard Deviation
+
+- **Definition**: The standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a set of data values. It indicates how much individual data points deviate from the mean (average) value of the dataset.
+
+- **Indication**: 
+    - A low standard deviation means that most of the data points are very close to the mean
+    - A high standard deviation indicates that the data points are spread out over a wider range of values
+
+## Standard Deviation (cont.)
+
+- **Calculation**: 
+  - The standard deviation is calculated by taking the square root of the average of the squared deviations of each value from the mean. 
+  - The formula for standard deviation ($\sigma$) is: $$\sigma = \sqrt{\frac{(x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + ... + (x_N - \bar{x})^2}{N}} =\sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_i - \bar{x})^2}$$
+  
+## Example: Standard Deviation {.smaller}
+
+Consider a small dataset: 4, 8, 6, 5, 3
+
+- Step 1. **Calculate the mean** ($\bar{x}$):$$\bar{x} = \frac{4 + 8 + 6 + 5 + 3}{5} = \frac{26}{5} = 5.2$$
+
+- Step 2. **Calculate each squared deviation from the mean**:
+    - For 4: $(4 - 5.2)^2 = 1.44$
+    - For 8: $(8 - 5.2)^2 = 7.84$
+    - For 6: $(6 - 5.2)^2 = 0.64$
+    - For 5: $(5 - 5.2)^2 = 0.04$
+    - For 3: $(3 - 5.2)^2 = 4.84$
+    
+## Example: Standard Deviation (cont)  {.smaller}
+
+- Step 3. **Calculate the average of these squared deviations**:$$\frac{1.44 + 7.84 + 0.64 + 0.04 + 4.84}{5} = \frac{14.8}{5} = 2.96$$
+
+- Step 4. **Take the square root**:$$\sigma = \sqrt{2.96} \approx 1.72$$
+
+- So, the standard deviation of this dataset is approximately 1.72. 
+- This value quantifies the amount of variation or dispersion of the set of data values from the mean.
+
+# Populations and Samples
+
+## Population vs. Sample
+
+```{r}
+
+# Base plot
+p <- ggplot() +
+  xlim(-10, 10) +
+  ylim(-10, 10) +
+  theme_void()  # Removes axes and grid
+
+# Adding population circle
+p <- p + geom_circle(aes(x0 = 0, y0 = 0, r = 8), fill = "lightblue", color = "blue", alpha = 0.5) +
+  annotate("text", x = 0, y = 5, label = "Population", size = 6) +
+  annotate("text", x = 0, y = 3, label = "Population Parameter (e.g., μ)", size = 4)
+
+# Adding sample circle
+p <- p + geom_circle(aes(x0 = 2, y0 = -2, r = 3), fill = "lightgreen", color = "green", alpha = 0.5) +
+  annotate("text", x = 2, y = -1, label = "Sample", size = 5) +
+  annotate("text", x = 2, y = -3, label = "Sample Statistic (e.g., x̄)", size = 4)
+
+# Display the plot
+print(p)
+
+```
+
+
+# Distributions
+
+## Normal Distribution
+
+- **Symmetry**: Look for symmetry around the mean. Both sides of the distribution should mirror each other.
+
+- **Bell-shaped Curve**: The distribution should form a bell shape, with a peak at the mean.
+
+- **Central Peak**: Most observations cluster around the central peak, indicating the mean of the distribution.
+
+- **Decreasing Frequency**: As you move away from the mean, the frequency of observations decreases, contributing to the bell shape.
+
+## Visualizing Normal Distribution in R
+
+::: {layout-ncol=2 .column-page}
+
+
+```{r}
+#| echo: false
+
+library(plotly)
+
+# Define the range and precision for the x values
+x <- seq(-10, 10, by = 0.1)
+
+# Normal PDF for three different standard deviations (sd = 1, 2, 3) with a mean of 0
+y1 <- dnorm(x, mean = 0, sd = 1)
+y2 <- dnorm(x, mean = 0, sd = 2)
+y3 <- dnorm(x, mean = 0, sd = 3)
+
+# Create the plot
+p <- plot_ly() %>%
+  add_lines(x = x, y = y1, name = "sd = 1", line = list(color = 'blue'), hoverinfo = 'none') %>%
+  add_lines(x = x, y = y2, name = "sd = 2", line = list(color = 'red'), hoverinfo = 'none') %>%
+  add_lines(x = x, y = y3, name = "sd = 3", line = list(color = 'green'), hoverinfo = 'none') %>%
+  layout(title = "Normal Distribution with Different Standard Deviations",
+         xaxis = list(title = "Value"),
+         yaxis = list(title = "Density"),
+         showlegend = TRUE) %>%
+  config(displayModeBar = FALSE)  # Hide the modebar
+
+# Show the plot
+p
+```
+```{r}
+#| echo: false
+
+library(plotly)
+
+# Define the range and precision for the x values
+x <- seq(-10, 10, by = 0.1)
+
+# Normal PDF for three different standard deviations (sd = 1, 2, 3) with a mean of 0
+y1 <- dnorm(x, mean = -3, sd = 1)
+y2 <- dnorm(x, mean = 0, sd = 1)
+y3 <- dnorm(x, mean = 3, sd = 1)
+
+# Create the plot
+p <- plot_ly() %>%
+  add_lines(x = x, y = y1, name = "mean = -3", line = list(color = 'blue'), hoverinfo = 'none') %>%
+  add_lines(x = x, y = y2, name = "mean = 0", line = list(color = 'red'), hoverinfo = 'none') %>%
+  add_lines(x = x, y = y3, name = "mean = 3", line = list(color = 'green'), hoverinfo = 'none') %>%
+  layout(title = "Normal Distribution with Different Standard Deviations",
+         xaxis = list(title = "Value"),
+         yaxis = list(title = "Density"),
+         showlegend = TRUE) %>%
+  config(displayModeBar = FALSE)  # Hide the modebar
+
+# Show the plot
+p
+```
+
+:::
+
+
+## T-Distribution
+
+- **Characteristics**: 
+  - The t-distribution is similar to the normal distribution but has thicker tails. 
+  - This means that it is more prone to producing values that fall far from its mean.
+
+- **Use**: It is particularly useful when dealing with small sample sizes or when the population variance is unknown.
+
+## T-Distribution vs. Normal Distribution
+
+- **Thicker Tails**: This leads to more extreme values compared to the normal distribution, making the t-distribution more suitable for small samples.
+
+- **Degrees of Freedom**: 
+  - The shape of the t-distribution depends on the degrees of freedom. 
+  - With more degrees of freedom, the t-distribution looks more like the normal distribution.
+
+## Visualizing T-Distribution in R
+
+```{r}
+library(plotly)
+
+# Define the x-axis values
+x <- seq(-4, 4, length = 100)
+
+# Create traces for each t-distribution with different degrees of freedom
+trace1 <- plot_ly(x = x, y = dt(x, df = 1), type = 'scatter', mode = 'lines', 
+                  line = list(color = 'blue'), name = 'df = 1', hoverinfo = 'none')
+
+trace2 <- add_trace(trace1, x = x, y = dt(x, df = 5), type = 'scatter', mode = 'lines', 
+                    line = list(color = 'green'), name = 'df = 5', hoverinfo = 'none')
+
+trace3 <- add_trace(trace2, x = x, y = dt(x, df = 10), type = 'scatter', mode = 'lines', 
+                    line = list(color = 'red'), name = 'df = 10', hoverinfo = 'none')
+
+trace4 <- add_trace(trace3, x = x, y = dt(x, df = 30), type = 'scatter', mode = 'lines', 
+                    line = list(color = 'purple'), name = 'df = 30', hoverinfo = 'none')
+
+# Add the normal distribution for comparison
+trace5 <- add_trace(trace4, x = x, y = dnorm(x, mean = 0, sd = 1), type = 'scatter', mode = 'lines', 
+                    line = list(color = 'black'), name = 'Normal', hoverinfo = 'none')
+
+# Customize the layout
+final_plot <- layout(trace5,
+                     title = "T-Distributions with Different Degrees of Freedom",
+                     xaxis = list(title = "Value"),
+                     yaxis = list(title = "Density"),
+                     showlegend = TRUE,
+                     legend = list(x = 0.8, y = 1),
+                     margin = list(l = 50, r = 50, b = 50, t = 50, pad = 4))
+
+# Hide the modebar
+final_plot <- config(final_plot, displayModeBar = FALSE)
+
+# Print the plot
+final_plot
+
+```
+
+# Hypothesis Testing Overview
+
+## Hypothesis Testing: An Introduction
+
+- Hypothesis testing is a statistical process used to draw conclusions about a population, based on sample data. 
+- Hypothesis testing compares the likelihood of validity of two mutually exclusive statements
+
+## Null Hypothesis
+- **Null Hypothesis ($H_0$):** The Null Hypothesis is a statement of no effect, no difference, or no change, and is assumed true until evidence indicates otherwise. 
+  - It serves as the default or baseline assumption in hypothesis testing and is formulated to be easily tested by statistical methods. 
+  - For example, if we are testing a new drug, the Null Hypothesis might state that the drug has no effect on patients compared to a placebo.
+
+## Alternative Hypothesis
+
+- **Alternative Hypothesis ($H_a$):** The Alternative Hypothesis proposes an effect, difference, or change and is considered only when there is sufficient evidence to reject the Null Hypothesis. 
+  - It is the statement that the researcher aims to support with evidence. 
+  - Continuing the drug example, the Alternative Hypothesis might claim that the drug has a significant effect on patients compared to a placebo.
+
+## The Process of Hypothesis Testing:
+
+1. **Formulate an Initial Assumption:** Establish the Null Hypothesis ($H_0$) as the default position.
+2. **Data Collection:** Gather sample data that will serve as evidence in the testing process.
+3. **Evidence Analysis:** Analyze the collected data to either support or refute the Null Hypothesis.
+4. **Conclusion:** Based on the evidence, decide whether to reject ($H_0$) in favor of ($H_a$) or not.
+
+## Understanding the Outcome:
+
+- The outcomes of hypothesis testing can be categorized into four possibilities:
+
+  - **True Positive:** The scenario where ($H_0$) is true and is rightly not rejected.
+  - **True Negative:** The case where ($H_0$) is false, ($H_a$) is true, and ($H_0$) is correctly rejected.
+  - **False Positive (Type I Error):** Occurs when ($H_a$) is incorrectly accepted despite ($H_0$) being true.
+  - **False Negative (Type II Error):** Happens when ($H_0$) is wrongly rejected despite ($H_0$) being true.
+
+## Illustrative Examples of Errors in a Drug Trial Context:
+
+- **Type I Error:** Consider a drug trial where the Null Hypothesis ($H_0$) is that the new drug has no effect on patients compared to a placebo.
+  - A Type I Error would occur if the trial results incorrectly suggest that the drug is effective, leading to the wrongful rejection of ($H_0$).
+  - This is akin to approving a drug that is actually no better than a placebo, potentially causing unnecessary exposure to side effects without any health benefits.
+
+## Illustrative Examples of Errors in a Drug Trial Context (cont):
+
+- **Type II Error:** In the same drug trial 
+  - Type II Error would happen if the results fail to show the drug's effectiveness, even when it truly is beneficial, leading to the wrongfully failing to reject ($H_0$). 
+  - This scenario is similar to overlooking a potentially life-saving medication due to insufficient evidence of its efficacy, denying patients a beneficial treatment.
+
+
+
+
+# One-Sample Mean T-test
+
+
+## Two-tailed T-test
+
+- **Null ($H_0$)**: Sample mean equals a hypothesized population mean. $$H_0: \bar{x}=\mu$$
+- **Alternative ($H_a$)**: Sample mean does not equal a hypothesized population mean. $$H_a: \bar{x}\neq\mu$$
+
+
+
+
+## Two-tailed Test Visualized 
+
+```{r}
+library(ggplot2)
+
+# Define the t distribution parameters
+df <- 20  # degrees of freedom
+x <- seq(-4, 4, length.out=1000)
+
+# Calculate critical t-values for alpha = 0.05 (two-tailed)
+alpha <- 0.05
+t_critical <- qt(c(alpha / 2, 1 - alpha / 2), df)
+
+# Create the base plot with shaded tails
+plot <- ggplot(data.frame(x), aes(x)) +
+  stat_function(fun = dt, args = list(df = df), geom = "line", colour = "blue") +
+  stat_function(fun = dt, args = list(df = df), geom = "area", xlim = c(min(x), t_critical[1]), fill = "gray", alpha = 0.5) +
+  stat_function(fun = dt, args = list(df = df), geom = "area", xlim = c(t_critical[2], max(x)), fill = "gray", alpha = 0.5) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black", size = 1) +
+  geom_vline(xintercept = c(-2.5, 1.5), linetype = "solid", color = c("darkred", "darkgreen"), size = 1) +
+  annotate("text", x = 0, y = 0.2, label = "Null Hypothesis (H0: t=0)", vjust = 1.5) +
+  annotate("text", x = c(-2.5, 1.5), y = c(0.15, 0.15), label = c("Rejected", "Not Rejected"), color = c("darkred", "darkgreen")) +
+  scale_x_continuous(name = "T-score") +
+  scale_y_continuous(name = "Density") +
+  ggtitle("T Distribution with Two-Sided T-Test Example") +
+  theme_minimal()
+
+# Display the plot
+print(plot)
+
+```
+
+## One-tailed T-test
+
+
+<div style="float: left; width: 48%;">
+- **Null ($H_0$)**: Sample mean equals a hypothesized population mean. $$H_0: \bar{x}=\mu$$
+- **Alternative ($H_a$)**: Sample mean does not equal a hypothesized population mean. $$H_a: \bar{x}>=\mu$$
+</div>
+<div style="float: right; width: 48%;">
+- **Null ($H_0$)**: Sample mean equals a hypothesized population mean. $$H_0: \bar{x}=\mu$$
+- **Alternative ($H_a$)**: Sample mean does not equal a hypothesized population mean. $$H_a: \bar{x}<=\mu$$
+</div>
+
+
+## One-tailed Test Visualized 
+
+```{r}
+library(ggplot2)
+
+# Define the t distribution parameters
+df <- 20  # degrees of freedom
+x <- seq(-4, 4, length.out=1000)
+
+# Calculate critical t-value for alpha = 0.05 (one-sided, right-tail)
+alpha <- 0.05
+t_critical_one_sided <- qt(1 - alpha, df)
+
+# Create the base plot with shaded right tail
+plot <- ggplot(data.frame(x), aes(x)) +
+  stat_function(fun = dt, args = list(df = df), geom = "line", colour = "blue") +
+  stat_function(fun = dt, args = list(df = df), geom = "area", xlim = c(t_critical_one_sided, max(x)), fill = "gray", alpha = 0.5) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black", size = 1) +
+  geom_vline(xintercept = 1.5, linetype = "solid", color = "darkgreen", size = 1) +  # Example t-score not rejected
+  geom_vline(xintercept = 2.5, linetype = "solid", color = "darkred", size = 1) +  # Example t-score rejected
+  annotate("text", x = 0, y = 0.2, label = "Null Hypothesis (H0: t=0)", vjust = 1.5) +
+  annotate("text", x = 1.5, y = 0.05, label = "Not Rejected", color = "darkgreen") +
+  annotate("text", x = 2.5, y = 0.15, label = "Rejected", color = "darkred") +  # Label for rejected t-score
+  scale_x_continuous(name = "T-score") +
+  scale_y_continuous(name = "Density") +
+  ggtitle("T Distribution with One-Sided T-Test Example (Right-Tail)") +
+  theme_minimal()
+
+# Display the plot
+print(plot)
+
+```
+
+
+
