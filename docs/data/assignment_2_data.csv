@@ -1,81 +1,81 @@
 "student_id","student_age","classroom_id","parent1_ed","parent2_ed","walk","fascinated","concentration","distractibility","mental_fatigue"
-1,11.93,4,"PhD or equivalent","Masters or equivalent","Walk","Yes",1.6,3.6,1.4
-2,11.11,4,"Masters or equivalent","AA or equivalent","No Walk","Yes",2.6,3.6,4
-3,12.77,4,"AA or equivalent","High School or GED","Walk","Yes",5,2.6,2.2
-4,12.64,5,"AA or equivalent","Bachelors or equivalent","Walk","No",5,5,2.2
-5,11.62,1,"High School or GED","Bachelors or equivalent","No Walk","No",3.4,3,4
-6,11.75,5,"Bachelors or equivalent","AA or equivalent","No Walk","No",4.2,3.8,2.6
-7,12.46,2,"Bachelors or equivalent","AA or equivalent","Walk","Yes",2.4,2,3
-8,11.83,3,"Masters or equivalent","Bachelors or equivalent","Walk","Yes",3.2,2.2,2.8
-9,12.56,2,"Masters or equivalent","Masters or equivalent","No Walk","Yes",1.2,3,2.6
-10,12.36,1,"PhD or equivalent","AA or equivalent","No Walk","Yes",2.6,4.2,2
-11,13.2,4,"Masters or equivalent","Bachelors or equivalent","No Walk","No",2.8,2.4,2.2
-12,12.77,5,"Bachelors or equivalent","Bachelors or equivalent","No Walk","Yes",3.8,5,4
-13,12.83,4,"Bachelors or equivalent","Masters or equivalent","No Walk","Yes",1.4,4.2,5
-14,13.33,2,"AA or equivalent","Bachelors or equivalent","No Walk","Yes",3.2,2,3.4
-15,12.14,2,"Bachelors or equivalent","AA or equivalent","No Walk","No",1.8,3,2.6
-16,12.48,4,"AA or equivalent","AA or equivalent","No Walk","No",2.8,3.2,4
-17,13.05,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",3.6,4.4,2.8
-18,11.56,2,"Masters or equivalent","Masters or equivalent","No Walk","Yes",1.8,4.6,4.4
-19,12.03,1,"Bachelors or equivalent","AA or equivalent","No Walk","Yes",4.8,3,4.4
-20,11.1,1,"AA or equivalent","Bachelors or equivalent","Walk","No",3.8,3,3
-21,12.75,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",3.6,4,3.6
-22,13.39,1,"AA or equivalent","AA or equivalent","Walk","Yes",4.8,1.4,3.8
-23,11.53,3,"PhD or equivalent","PhD or equivalent","Walk","Yes",3,3.2,3.6
-24,12.65,4,"Masters or equivalent","AA or equivalent","Walk","Yes",4.8,2.6,5
-25,13.31,4,"Masters or equivalent","PhD or equivalent","Walk","No",3.6,3,3.4
-26,12.99,2,"Bachelors or equivalent","Masters or equivalent","No Walk","No",1.2,1.4,2.4
-27,11.18,1,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",2.4,4.6,3.2
-28,11.97,1,"High School or GED","Bachelors or equivalent","No Walk","Yes",2,2.6,4.4
-29,12.02,4,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",4,4.6,2
-30,12.65,5,"PhD or equivalent","AA or equivalent","No Walk","Yes",2.6,3.4,4.2
-31,12.06,2,"AA or equivalent","Masters or equivalent","Walk","Yes",3.2,4.8,3
-32,11.8,1,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4,3.2,2.6
-33,11.49,3,"Bachelors or equivalent","AA or equivalent","Walk","Yes",4,1.4,4
-34,11.41,5,"PhD or equivalent","Bachelors or equivalent","Walk","Yes",4.2,2.6,3
-35,12.31,4,"Masters or equivalent","AA or equivalent","Walk","No",4.2,3.2,2.6
-36,13.28,5,"AA or equivalent","Bachelors or equivalent","Walk","Yes",1.6,4.6,3
-37,11.52,5,"AA or equivalent","Bachelors or equivalent","No Walk","No",5,2.8,2.8
-38,13.04,3,"AA or equivalent","AA or equivalent","Walk","No",2.2,4.8,3.4
-39,11.05,2,"AA or equivalent","Bachelors or equivalent","No Walk","Yes",3.8,4.4,3.4
-40,13.31,3,"Masters or equivalent","High School or GED","Walk","No",3.8,2.4,1.6
-41,12.09,3,"AA or equivalent","AA or equivalent","Walk","Yes",4.6,2.8,2.6
-42,12.11,2,"AA or equivalent","High School or GED","No Walk","Yes",3.6,4.4,3
-43,12.9,1,"High School or GED","Bachelors or equivalent","Walk","No",3,3.6,2.4
-44,11.83,3,"AA or equivalent","Masters or equivalent","No Walk","Yes",3.4,3.2,3.6
-45,11.99,2,"Bachelors or equivalent","Masters or equivalent","Walk","No",3.6,3.6,5
-46,11.58,4,"AA or equivalent","AA or equivalent","Walk","No",2.4,5,1.2
-47,11.18,3,"AA or equivalent","Bachelors or equivalent","Walk","No",1.6,2,2.8
-48,13.28,3,"Bachelors or equivalent","Masters or equivalent","Walk","Yes",4,2.8,2.6
-49,12.93,4,"PhD or equivalent","AA or equivalent","Walk","No",3,3.2,4.4
-50,11.27,1,"AA or equivalent","Bachelors or equivalent","No Walk","No",2.6,3.8,4
-51,11.2,4,"AA or equivalent","Bachelors or equivalent","Walk","No",2,1,4.4
-52,12.08,2,"Bachelors or equivalent","Masters or equivalent","Walk","No",4.8,5,4.4
-53,12.7,2,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",2.2,4.4,4.8
-54,12.84,2,"High School or GED","Bachelors or equivalent","No Walk","No",3,2.2,3
-55,12.13,3,"Masters or equivalent","Masters or equivalent","No Walk","No",3.4,3.8,1.6
-56,12.96,3,"High School or GED","Masters or equivalent","No Walk","Yes",5,4.6,4.2
-57,12.7,3,"PhD or equivalent","Bachelors or equivalent","Walk","Yes",4.8,3,4.2
-58,12.3,5,"PhD or equivalent","Masters or equivalent","Walk","Yes",2.6,3.2,3.6
-59,12.73,3,"Masters or equivalent","Bachelors or equivalent","Walk","Yes",4.4,2.4,2.4
-60,12.47,4,"Bachelors or equivalent","Bachelors or equivalent","Walk","Yes",3.8,1.6,2.8
-61,13.04,5,"AA or equivalent","AA or equivalent","No Walk","No",4,1.2,2
-62,13.03,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4,4.6,3.2
-63,12.52,5,"AA or equivalent","Masters or equivalent","No Walk","No",1.8,4.2,3.6
-64,13.48,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4.6,2.4,4
-65,13.11,5,"Masters or equivalent","Bachelors or equivalent","No Walk","Yes",3.4,3.6,3.8
-66,12.79,2,"Bachelors or equivalent","AA or equivalent","Walk","No",3.8,4.6,5
-67,11.05,3,"Bachelors or equivalent","Masters or equivalent","No Walk","No",3.2,4.8,1
-68,11.76,4,"Bachelors or equivalent","AA or equivalent","No Walk","No",4.2,2.6,1.2
-69,13.21,1,"Bachelors or equivalent","Masters or equivalent","Walk","Yes",4.6,3.8,4.6
-70,13.35,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","Yes",5,2.2,2.4
-71,11.59,2,"AA or equivalent","Bachelors or equivalent","No Walk","No",2.8,4.2,1.2
-72,13.34,3,"Bachelors or equivalent","AA or equivalent","No Walk","Yes",4.2,2.8,2.8
-73,12.42,3,"AA or equivalent","High School or GED","No Walk","Yes",2.2,1.4,2.8
-74,13.11,5,"Masters or equivalent","Masters or equivalent","No Walk","Yes",4.2,4.2,1.8
-75,13.05,1,"Bachelors or equivalent","PhD or equivalent","No Walk","No",3,3.8,4.4
-76,11.7,2,"did not finish High School","High School or GED","No Walk","No",3.8,4,2.6
-77,11.12,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4.8,3.4,3.6
-78,11.56,4,"PhD or equivalent","PhD or equivalent","Walk","Yes",2.6,2.2,2.4
-79,12.68,3,"Bachelors or equivalent","Bachelors or equivalent","No Walk","Yes",5,3.8,3.6
-80,13.4,5,"Bachelors or equivalent","Masters or equivalent","No Walk","Yes",3.8,3.4,4
+1,11.93,4,"PhD or equivalent","Masters or equivalent","Walk","Yes",1.6,3,3.6
+2,11.11,4,"Masters or equivalent","AA or equivalent","No Walk","Yes",2.6,2,3.6
+3,12.77,4,"AA or equivalent","High School or GED","Walk","Yes",5,2.4,2.6
+4,12.64,5,"AA or equivalent","Bachelors or equivalent","Walk","No",5,4.8,5
+5,11.62,1,"High School or GED","Bachelors or equivalent","No Walk","No",3.4,3.2,3
+6,11.75,5,"Bachelors or equivalent","AA or equivalent","No Walk","No",4.2,2.6,3.8
+7,12.46,2,"Bachelors or equivalent","AA or equivalent","Walk","Yes",2.4,2.2,2
+8,11.83,3,"Masters or equivalent","Bachelors or equivalent","Walk","Yes",3.2,2.6,2.2
+9,12.56,2,"Masters or equivalent","Masters or equivalent","No Walk","Yes",1.2,1.4,3
+10,12.36,1,"PhD or equivalent","AA or equivalent","No Walk","Yes",2.6,3.6,4.2
+11,13.2,4,"Masters or equivalent","Bachelors or equivalent","No Walk","No",2.8,3.2,2.4
+12,12.77,5,"Bachelors or equivalent","Bachelors or equivalent","No Walk","Yes",3.8,1.8,5
+13,12.83,4,"Bachelors or equivalent","Masters or equivalent","No Walk","Yes",1.4,5,4.2
+14,13.33,2,"AA or equivalent","Bachelors or equivalent","No Walk","Yes",3.2,5,2
+15,12.14,2,"Bachelors or equivalent","AA or equivalent","No Walk","No",1.8,3.8,3
+16,12.48,4,"AA or equivalent","AA or equivalent","No Walk","No",2.8,3,3.2
+17,13.05,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",3.6,4.2,4.4
+18,11.56,2,"Masters or equivalent","Masters or equivalent","No Walk","Yes",1.8,3.6,4.6
+19,12.03,1,"Bachelors or equivalent","AA or equivalent","No Walk","Yes",4.8,2.2,3
+20,11.1,1,"AA or equivalent","Bachelors or equivalent","Walk","No",3.8,4.8,3
+21,12.75,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",3.6,3.4,4
+22,13.39,1,"AA or equivalent","AA or equivalent","Walk","Yes",4.8,2.2,1.4
+23,11.53,3,"PhD or equivalent","PhD or equivalent","Walk","Yes",3,1.6,3.2
+24,12.65,4,"Masters or equivalent","AA or equivalent","Walk","Yes",4.8,2.2,2.6
+25,13.31,4,"Masters or equivalent","PhD or equivalent","Walk","No",3.6,3,3
+26,12.99,2,"Bachelors or equivalent","Masters or equivalent","No Walk","No",1.2,1.8,1.4
+27,11.18,1,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",2.4,2.2,4.6
+28,11.97,1,"High School or GED","Bachelors or equivalent","No Walk","Yes",2,2.6,2.6
+29,12.02,4,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",4,3,4.6
+30,12.65,5,"PhD or equivalent","AA or equivalent","No Walk","Yes",2.6,3.2,3.4
+31,12.06,2,"AA or equivalent","Masters or equivalent","Walk","Yes",3.2,1.4,4.8
+32,11.8,1,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4,2.8,3.2
+33,11.49,3,"Bachelors or equivalent","AA or equivalent","Walk","Yes",4,1.6,1.4
+34,11.41,5,"PhD or equivalent","Bachelors or equivalent","Walk","Yes",4.2,2.8,2.6
+35,12.31,4,"Masters or equivalent","AA or equivalent","Walk","No",4.2,2.2,3.2
+36,13.28,5,"AA or equivalent","Bachelors or equivalent","Walk","Yes",1.6,4,4.6
+37,11.52,5,"AA or equivalent","Bachelors or equivalent","No Walk","No",5,4.4,2.8
+38,13.04,3,"AA or equivalent","AA or equivalent","Walk","No",2.2,2.6,4.8
+39,11.05,2,"AA or equivalent","Bachelors or equivalent","No Walk","Yes",3.8,5,4.4
+40,13.31,3,"Masters or equivalent","High School or GED","Walk","No",3.8,3.2,2.4
+41,12.09,3,"AA or equivalent","AA or equivalent","Walk","Yes",4.6,4.2,2.8
+42,12.11,2,"AA or equivalent","High School or GED","No Walk","Yes",3.6,2.8,4.4
+43,12.9,1,"High School or GED","Bachelors or equivalent","Walk","No",3,3,3.6
+44,11.83,3,"AA or equivalent","Masters or equivalent","No Walk","Yes",3.4,2.6,3.2
+45,11.99,2,"Bachelors or equivalent","Masters or equivalent","Walk","No",3.6,3.8,3.6
+46,11.58,4,"AA or equivalent","AA or equivalent","Walk","No",2.4,4.8,5
+47,11.18,3,"AA or equivalent","Bachelors or equivalent","Walk","No",1.6,4.8,2
+48,13.28,3,"Bachelors or equivalent","Masters or equivalent","Walk","Yes",4,3.2,2.8
+49,12.93,4,"PhD or equivalent","AA or equivalent","Walk","No",3,4.4,3.2
+50,11.27,1,"AA or equivalent","Bachelors or equivalent","No Walk","No",2.6,3.4,3.8
+51,11.2,4,"AA or equivalent","Bachelors or equivalent","Walk","No",2,3.4,1
+52,12.08,2,"Bachelors or equivalent","Masters or equivalent","Walk","No",4.8,4.8,5
+53,12.7,2,"Bachelors or equivalent","Bachelors or equivalent","No Walk","No",2.2,5,4.4
+54,12.84,2,"High School or GED","Bachelors or equivalent","No Walk","No",3,4.6,2.2
+55,12.13,3,"Masters or equivalent","Masters or equivalent","No Walk","No",3.4,1,3.8
+56,12.96,3,"High School or GED","Masters or equivalent","No Walk","Yes",5,3,4.6
+57,12.7,3,"PhD or equivalent","Bachelors or equivalent","Walk","Yes",4.8,3.2,3
+58,12.3,5,"PhD or equivalent","Masters or equivalent","Walk","Yes",2.6,1.6,3.2
+59,12.73,3,"Masters or equivalent","Bachelors or equivalent","Walk","Yes",4.4,4.2,2.4
+60,12.47,4,"Bachelors or equivalent","Bachelors or equivalent","Walk","Yes",3.8,3,1.6
+61,13.04,5,"AA or equivalent","AA or equivalent","No Walk","No",4,4.6,1.2
+62,13.03,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4,2.4,4.6
+63,12.52,5,"AA or equivalent","Masters or equivalent","No Walk","No",1.8,2.2,4.2
+64,13.48,2,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4.6,4,2.4
+65,13.11,5,"Masters or equivalent","Bachelors or equivalent","No Walk","Yes",3.4,3.8,3.6
+66,12.79,2,"Bachelors or equivalent","AA or equivalent","Walk","No",3.8,5,4.6
+67,11.05,3,"Bachelors or equivalent","Masters or equivalent","No Walk","No",3.2,3.8,4.8
+68,11.76,4,"Bachelors or equivalent","AA or equivalent","No Walk","No",4.2,4.2,2.6
+69,13.21,1,"Bachelors or equivalent","Masters or equivalent","Walk","Yes",4.6,5,3.8
+70,13.35,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","Yes",5,1.4,2.2
+71,11.59,2,"AA or equivalent","Bachelors or equivalent","No Walk","No",2.8,4.6,4.2
+72,13.34,3,"Bachelors or equivalent","AA or equivalent","No Walk","Yes",4.2,4.2,2.8
+73,12.42,3,"AA or equivalent","High School or GED","No Walk","Yes",2.2,2.8,1.4
+74,13.11,5,"Masters or equivalent","Masters or equivalent","No Walk","Yes",4.2,3.8,4.2
+75,13.05,1,"Bachelors or equivalent","PhD or equivalent","No Walk","No",3,3,3.8
+76,11.7,2,"did not finish High School","High School or GED","No Walk","No",3.8,2.6,4
+77,11.12,3,"Bachelors or equivalent","Bachelors or equivalent","Walk","No",4.8,3.8,3.4
+78,11.56,4,"PhD or equivalent","PhD or equivalent","Walk","Yes",2.6,4.8,2.2
+79,12.68,3,"Bachelors or equivalent","Bachelors or equivalent","No Walk","Yes",5,3.4,3.8
+80,13.4,5,"Bachelors or equivalent","Masters or equivalent","No Walk","Yes",3.8,4.6,3.4
